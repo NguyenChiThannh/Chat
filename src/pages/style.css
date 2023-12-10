@@ -104,7 +104,9 @@
 
 .navbar .user{
     display: flex;
+    width: 100%;
     align-items: center;
+    justify-content: space-between;
 }
 .navbar .user img{
     background-color: #ddddf7;
@@ -114,6 +116,7 @@
     object-fit: cover;
 }
 .navbar button{
+    height: 24px;
     cursor: pointer;
     background-color: #5d5b8d;
     color: #ddddf7;

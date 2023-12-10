@@ -1,13 +1,16 @@
+import React, { useContext } from 'react'
 import VideocamIcon from '@mui/icons-material/Videocam'
 import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
 import Messages from './Messages'
 import Input from './Input'
+import { ChatContext } from '../context/ChatContext'
 function Chat() {
+  const { data } = useContext(ChatContext)
   return (
     <div className="chat">
       <div className="chatInfo">
-        <span>Jane</span>
+        <span>{data.user?.displayName}</span>
         <div className="chatIcons">
           <VideocamIcon />
           <PersonAddAlt1Icon />
